@@ -1,0 +1,27 @@
+.container{
+    display:grid;
+    grid-template-columns: 20vw 80vw ;
+    grid-template-rows: 5vh 10vh 85vh;
+}
+
+.dashboard{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: blue;
+}
+
+.topNav{
+    grid-area :1/2/2/4;
+    background-color: wheat;
+
+}
+
+.headNav{
+    grid-area:2/2/3/4;
+    background-color: aqua;
+}
+
+.content{
+    grid-area:3/2/3/4;
+    background-color: blueviolet;
+}
