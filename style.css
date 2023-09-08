@@ -1,30 +1,182 @@
+body{
+    margin:0;
+    background-color: #f8f7ff;
+}
+
+img{
+    vertical-align: middle;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #9381ff;
+}
+
 .container{
     display:grid;
     grid-template-columns: 20vw 80vw ;
-    grid-template-rows: 5vh 10vh 85vh;
+    grid-template-rows: 15vh 85vh;
 }
 
 .dashboard{
     grid-column: 1/2;
     grid-row: 1/4;
-    background-color: blue;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:repeat(11,1fr)
+    grid-template-rows:10% 45% 45%;
+    background: rgba( 248, 247, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    margin:0.5rem;
+    
 }
+
+.nav{
+    grid-area:1/2/2/4;
+    display:grid;
+    grid-template-rows: 2rem 1fr;
+    background: rgba( 248, 247, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    margin: 0.4rem 0rem;
+    
+}
+
+.dashboardHead{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.topDash{
+    display:grid;
+    grid-template-rows: repeat(7,1fr);
+    padding-top: 10px;
+    margin-left:40px;
+}
+
+.btmDash{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    margin-left:40px;
+
+}
+
 
 .topNav{
-    grid-area :1/2/2/4;
-    background-color: wheat;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
 
 }
+.topNav>input{
+    min-width: 40vw;
+    border-radius: 15px;
+}
+
 
 .headNav{
-    grid-area:2/2/3/4;
-    background-color: aqua;
+    display:flex;
+    justify-content:space-between;
+}
+
+
+.profile{
+    display:flex;
+    gap:1rem;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+.userCont{
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.userCont>img{
+    align-self: center;
+}
+
+.userInfo{
+    min-width: 7rem;
+}
+
+.userInfo>*{
+    margin:5%
+}
+
+.greeting{
+    font-size: 0.85rem;
+}
+
+.userName{
+    font-weight: bold;
+}
+
+
+.actionButton{
+    align-self: center;
+    margin-right: 0.5rem;
 }
 
 .content{
-    grid-area:3/2/3/4;
-    background-color: blueviolet;
+    grid-area:2/2/4/4;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    background: rgba( 184, 184, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.projectContainer{
+    display:grid;
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 7rem 7rem 7rem;
+    gap: 2rem 2rem;
+}
+
+.rightContent{
+    display:grid;
+    grid-template-rows: 50% 50%;
+}
+
+.contentContainer{
+    display:grid;
+    grid-template-rows: 3rem 3rem 3rem;
+}
+
+.project, .trend, .annoucement{
+    margin:0.5rem;
+    background: rgba( 255, 255, 255, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.5px );
+-webkit-backdrop-filter: blur( 13.5px );
+border-radius: 10px;
+text-align: center;
+    
+}
+
+.topSection{
+    background: rgba( 248, 247, 255, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.5px );
+-webkit-backdrop-filter: blur( 13.5px );
+border-radius: 10px;
+margin: 0.5rem;
+}
+
+li{
+    list-style: none;
+}
+button{
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #9381ff;
 }
